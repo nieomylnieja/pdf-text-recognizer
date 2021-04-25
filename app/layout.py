@@ -42,7 +42,7 @@ class Layout:
 
     @staticmethod
     def get() -> list:
-        default_dir = str(Path.home()) + '/myProjects/pdf-text-recognizer'
+        default_dir = str(Path.home()) + Config.DEFAULT_DIR
 
         file_source_text = [sg.Text('Pick a file for recognition', key=Key.FILE_SOURCE_TEXT)]
         file_source_row = [
